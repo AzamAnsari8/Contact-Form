@@ -1,0 +1,54 @@
+body{
+    background-color:darkblue;
+    text-align: center;
+    font-style: italic;
+    font-size: larger;
+    color: white;
+    justify-content: center;
+}
+
+.container{
+    width: 400px;
+    margin: 10px auto 0px auto;
+    background-color: aliceblue;
+    padding: 20px;
+    color: red;
+    text-align: left;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+.text{
+    width: 94%;
+    padding: 10px;
+    background-color:lightcyan;
+}
+
+.message{
+    width: 94%;
+    height: 80px;
+    padding: 10px;
+    background-color:lightcyan;
+    border: 2px solid black;
+}
+
+.button{
+    background-color: rgb(35, 150, 64);
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        background-color: green;
+    }
+
+    .container{
+        width: 250px;
+        height: 600px;
+        color: blue;
+    }
+    
+}
