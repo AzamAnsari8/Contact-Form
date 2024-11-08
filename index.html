@@ -9,36 +9,45 @@
 </head>
 
 <body>
-    <h1>Simple Contact Form</h1>
-    <div class="container">
-        <form type="submit">
-            <label>First Name</label>
-            <br>
-            <input type="text" name="fname" id="name" class="fname text" placeholder=" Enter Your First Name" required>
-            <br><br>
-            <label>Last Name</label>
-            <br>
-            <input type="text" name="lname" id="name" class="lname text" placeholder="Enter Your Last Name">
-            <br><br>
-            <label>Email</label>
-            <br>
-            <input type="email" name="email" id="name" class="fmail text" placeholder="Eg:-abc@gmail.com" required>
-            <br><br>
-            <label>Phone Number</label>
-            <br>
-            <input type="number" name="phone" id="name" class="pnumber text" placeholder="Your Vailed Phone Number" required>
-            <br><br>
-            <label>City</label>
-            <br>
-            <input type="text" name="city" id="name" class="lname text" placeholder="Eg:-Mumbai">
-            <br><br>
-            <label>Message</label>
-            <br>
-            <textarea id="name" class="message" placeholder="Message......"></textarea>
-            <br><br>
-            <button type="button" class="button">Submit</button>
-        </form>
-    </div>
+    <section>
+        <div class="container">
+            <h1>Simple Contact Form</h1>
+            <form action="home.html" method="get" onsubmit="return validateForm()">
+                <div class="margin-bottom">
+                    <label>First Name</label>
+                    <input type="text" name="fname" id="fname" class="fname text" placeholder=" Enter Your First Name">
+                    <span id="f-name"></span>
+                </div>
+                <div class="margin-bottom">
+                    <label>Last Name</label>
+                    <input type="text" name="lname" id="lname" class="lname text" placeholder="Enter Your Last Name">
+                    <span id="l-name"></span>
+                </div>
+                <div class="margin-bottom">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" class="fmail text" placeholder="Eg:-abc@gmail.com">
+                    <span id="fmail"></span>
+                </div>
+                <div class="margin-bottom">
+                    <label>Phone Number</label>
+                    <input type="number" name="phone" id="phone" class="pnumber text"
+                        placeholder="Your Vailed Phone Number">
+                    <span id="phoneno"></span>
+                </div>
+                <div class="margin-bottom">
+                    <label>City</label>
+                    <input type="text" name="city" id="city" class="lname text" placeholder="Eg:-Mumbai">
+                    <span id="fcity"></span>
+                </div>
+                <div class="margin-bottom">
+                    <label>Message</label>
+                    <textarea id="message" rows="6" class="text" placeholder="Message......"></textarea>
+                </div>
+                <input type="submit" id="btn" class="button" value="submit"></input>
+            </form>
+        </div>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

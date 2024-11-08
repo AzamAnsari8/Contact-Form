@@ -1,38 +1,38 @@
-body{
-    background-color:darkblue;
-    text-align: center;
+body {
+    background-color: cadetblue;
     font-style: italic;
     font-size: larger;
-    color: white;
-    justify-content: center;
 }
 
-.container{
+.container {
     width: 400px;
-    margin: 10px auto 0px auto;
+    margin: 20px auto 0px auto;
     background-color: aliceblue;
-    padding: 20px;
-    color: red;
+    padding: 0px 20px 15px 20px;
+    color: indigo;
     text-align: left;
     border: 5px solid black;
-    border-radius: 20px;
+    border-radius: 5%;
 }
 
-.text{
+h1 {
+    text-align: center;
+}
+
+.text {
+    margin-top: 5px;
     width: 94%;
     padding: 10px;
-    background-color:lightcyan;
+    background-color: lightcyan;
+    border: 3px solid black;
+
 }
 
-.message{
-    width: 94%;
-    height: 80px;
-    padding: 10px;
-    background-color:lightcyan;
-    border: 2px solid black;
+.margin-bottom {
+    margin-bottom: 15px;
 }
 
-.button{
+.button {
     background-color: rgb(35, 150, 64);
     width: 100%;
     padding: 10px;
@@ -41,14 +41,9 @@ body{
 }
 
 @media only screen and (max-width: 768px) {
-    body{
-        background-color: green;
-    }
-
-    .container{
+    .container {
         width: 250px;
         height: 600px;
-        color: blue;
     }
-    
+
 }
